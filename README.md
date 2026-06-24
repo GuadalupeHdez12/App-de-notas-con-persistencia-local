@@ -1,16 +1,101 @@
-# React + Vite
+# 📝 Gestor de Notas — App con Persistencia Local
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web para **crear, editar y eliminar notas** con persistencia en el navegador mediante `localStorage`. Construida con **React 19**, **Vite**, **React Router DOM** y **Tailwind CSS**, como práctica de React avanzado: manejo de formularios, eventos y Hooks.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Características
 
-## React Compiler
+- 📝 Crear, editar y eliminar notas
+- 💾 Persistencia de datos con `localStorage` (las notas se conservan al recargar la página)
+- 🧭 Navegación entre vistas con React Router DOM
+- 🎣 Uso avanzado de Hooks de React (`useState`, `useEffect`, custom hooks)
+- ⚡ Desarrollo rápido con Vite y Hot Module Replacement
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Tecnología | Versión | Uso |
+|---|---|---|
+| [React](https://react.dev/) | ^19.1.1 | UI y lógica de componentes |
+| [Vite](https://vite.dev/) | ^7.1.7 | Bundler y servidor de desarrollo |
+| [React Router DOM](https://reactrouter.com/) | ^7.9.5 | Navegación entre vistas |
+| [Tailwind CSS](https://tailwindcss.com/) | ^4.1.16 | Estilos utilitarios |
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+App-de-notas-con-persistencia-local/
+├── public/           # Archivos estáticos
+├── src/              # Código fuente
+│   ├── components/   # Componentes reutilizables
+│   ├── hooks/        # Custom Hooks
+│   ├── pages/        # Vistas / páginas
+│   └── main.jsx      # Punto de entrada
+├── index.html
+├── vite.config.js
+└── package.json
+```
+
+---
+
+## ⚙️ Instalación
+
+### 1. Clona el repositorio
+
+```bash
+git clone https://github.com/GuadalupeHdez12/App-de-notas-con-persistencia-local.git
+cd App-de-notas-con-persistencia-local
+```
+
+### 2. Instala las dependencias
+
+```bash
+npm install
+```
+
+### 3. Inicia el servidor de desarrollo
+
+```bash
+npm run dev
+```
+
+Abre [http://localhost:5173](http://localhost:5173) en tu navegador.
+
+---
+
+## 🧑‍💻 Comandos disponibles
+
+```bash
+# Servidor de desarrollo con HMR
+npm run dev
+
+# Compilar para producción
+npm run build
+
+# Vista previa del build de producción
+npm run preview
+
+# Ejecutar el linter
+npm run lint
+```
+
+---
+
+## 💡 Conceptos practicados
+
+- Manejo de formularios controlados en React
+- Escucha y gestión de eventos
+- `useState` y `useEffect` para sincronizar estado con `localStorage`
+- Custom Hooks para separar la lógica de negocio
+- Navegación con React Router DOM v7
+
+---
+
+## 👩‍💻 Autora
+
+**Guadalupe Hernández**  
+[@GuadalupeHdez12](https://github.com/GuadalupeHdez12)
